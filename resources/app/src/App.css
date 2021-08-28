@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --font: Montserrat, sans;
@@ -49,16 +50,15 @@
   align-items: center;
 }
 
- .card .card-body input{
+ .banner .card .card-body input{
    color: black;
    margin: 5px 0px;
 }
-.card .card-body .inputWithIcon input[type=text]{
+.banner .card .card-body .inputWithIcon input[type=text]{
 padding-left: 25px;
 }
 .inputWithIcon{
   position: relative;
-
 }
 .icon{
   position: absolute;
@@ -89,15 +89,15 @@ padding-left: 25px;
   /* border-radius: 50%; */
   color: #c0392b;
 }
-.card .card-body p{
+.banner .card .card-body p{
   color: black;
   font-weight: bolder;
 }
-.card .card-body p span{
+.banner .card .card-body p span{
  color: orange;
  margin-left: 0px;
 }
-.card .card-body input[type=text]{
+.banner .card .card-body input[type=text]{
 
  
   border:none;
@@ -109,7 +109,7 @@ padding-left: 25px;
   
 }
 
-.card .card-body ::placeholder {
+.banner .card .card-body ::placeholder {
  font-size: 0.8rem;
  padding: 10px;
  font-weight: bolder;
@@ -132,22 +132,57 @@ padding-left: 25px;
   z-index: 1111;
 }
 
+
+
+/* BANNER SECTION END */
+
+
+/* Statistics Card START   */
+
+
+
+
+
+/* Statistics Card END  */
+
+
+
+
+/* Media Query */
+
 @media only screen and (min-device-width: 800px) {
-  .card{
-position: absolute;
-left: -50px;
-margin-top: -50px;
-width: 50%;
-  }
- 
+
+
+
+   /* Banner */
+
+  .banner .card{
+  position: absolute;
+  margin-top: -50px;
+  width: 50%;  
 }
 
+   /* Banner ENd */
+
+
+  /* Statistics */
+
+
+  }
+   /* Statistics end */
+ 
+
+
 @media screen and (max-width: 512px) {
-  .card{
+  .banner .card{
     margin-left: 15px;
     margin-top: -60px;
     margin-bottom: 15px;
   }
+    /* Statistics */
+  
+   
+     /* Statistics end */
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 400px) {
@@ -200,8 +235,4 @@ width: 50%;
     font-size: 1rem !important;
   }
 }
-
-
-
-/* BANNER SECTION END */
 

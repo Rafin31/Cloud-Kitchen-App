@@ -4,6 +4,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import TweenMax from 'gsap';
 import { Power3 } from 'gsap';
 import Navbar from './Navbar/Navbar';
+import Statistics from './statistics';
 
 
 function Banner() {
@@ -19,7 +20,7 @@ function Banner() {
         <>
             <Navbar />
             <div className="banner banner_black">
-                <div className="row container-fluid  h-100 ">
+                <div className="row container-fluid banner_row h-100 ">
                     <div className="left_banner col-sm-10 col-lg-12 justify-content-center ">
                         <div class="card shadow wow bounceInUp p-3 mb-5 bg-white rounded " ref={el => card = el}  >
                             <div class="card-body" >
@@ -38,6 +39,7 @@ function Banner() {
                     </div>
                 </div>
             </div >
+
         </>
 
 
