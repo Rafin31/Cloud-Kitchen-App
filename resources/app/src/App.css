@@ -1,38 +1,207 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font: Montserrat, sans;
+  --font_logo : Rampart One, cursive;
+  --color : aliceblue ;
+  --font2 : Bebas Neue, cursive;
+ 
+}
+/* Navber Start  */
+
+.navbar{
+  background-color: white;
+  width: 100vw !important;
+}
+.navbar .navbar_container {
+  width: 100% !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.navbar_container h3{
+  padding: 10px 15px !important;
+  font-family: var(--font_logo);
+}
+
+
+
+
+/* Navbar end */
+
+
+
+
+/* BANNER SECTION */
+.left_banner {
+  position: relative;
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: baseline;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ .card .card-body input{
+   color: black;
+   margin: 5px 0px;
+}
+.card .card-body .inputWithIcon input[type=text]{
+padding-left: 25px;
+}
+.inputWithIcon{
+  position: relative;
+
+}
+.icon{
+  position: absolute;
+  color: #c0392b;
+  top: 119px;
+  left: 35px;
+}
+.search_icon{
+  position: absolute;
+  color: #c0392b;
+  font-weight: bolder;
+  top: 80px;
+  left: 35px;
+}
+.banner_btn{
+  position: absolute;
+  border: 3px solid #c0392b !important;
+  border-radius: 0% !important;
+  font-family: var(--font);
+  color: var(--color) !important;
+  top: 97px;
+  right: 32px;
+  font-size: small !important;
+   line-height: 1.5rem !important;
+  font-weight: 800 !important;
+}
+.inputWithIcon input[type=text]:hover + .icon  {
+  /* border-radius: 50%; */
+  color: #c0392b;
+}
+.card .card-body p{
+  color: black;
+  font-weight: bolder;
+}
+.card .card-body p span{
+ color: orange;
+ margin-left: 0px;
+}
+.card .card-body input[type=text]{
+
+ 
+  border:none;
+  border-bottom: 3px solid #c0392b;
+  outline-color: white !important;
+  font-family: var(--font);
+  font-weight: bold;
+ 
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card .card-body ::placeholder {
+ font-size: 0.8rem;
+ padding: 10px;
+ font-weight: bolder;
+}
+
+.banner{
+  height: 70vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url("../src/Asset/background.jpg");
+  background-position: center;
+ 
+  background-size: cover;
+  width: 100%;
+
+}
+.banner .logo{
+  font-family: var(--font_logo);
+  z-index: 1111;
+}
+
+@media only screen and (min-device-width: 800px) {
+  .card{
+position: absolute;
+left: -50px;
+margin-top: -50px;
+width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+ 
+}
+
+@media screen and (max-width: 512px) {
+  .card{
+    margin-left: 15px;
+    margin-top: -60px;
+    margin-bottom: 15px;
   }
 }
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 400px) {
+  .icon{
+    position: absolute;
+    color: #c0392b;
+    top: 141px;
+    left: 35px;
+  }
+  .search_icon{
+    position: absolute;
+    color: #c0392b;
+    font-weight: bolder;
+    top: 105px;
+    left: 35px;
+  }
+  .banner_btn{
+    position: absolute;
+    border: 3px solid #c0392b !important;
+    font-family: var(--font);
+    color: var(--color) !important;
+    width: 10% !important;
+    font-size: 1rem !important;
+    top: 121px;
+    right: 32px;
+  }
+ 
+}
+
+@media screen  and (min-device-width: 401px) and (max-width: 635px) {
+  .icon{
+    position: absolute;
+    color: #c0392b;
+    top: 119px;
+    left: 35px;
+  }
+  .search_icon{
+    position: absolute;
+    color: #c0392b;
+    font-weight: bolder;
+    top: 79px;
+    left: 35px;
+  }
+  .banner_btn{
+    position: absolute;
+    color: #c0392b;
+    font-weight: bolder;
+    top: 97px;
+    right: 32px;
+    font-size: 1rem !important;
+  }
+}
+
+
+
+/* BANNER SECTION END */
+
