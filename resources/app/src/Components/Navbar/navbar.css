@@ -3,10 +3,13 @@
 
     background-color: #c0392b;
     height: 50px;
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     z-index: 99999999;
+   
 
   }
 
@@ -34,11 +37,14 @@
     left: 0;
     transition: 350ms;
   }
-  .nav-menu.active + .banner{
+  .nav-menu.active ~ .BODY {
      opacity: 0.3;
     transition: 350ms ease-in;
   }
-  
+
+  .BODY .active{
+    opacity: 0.2;
+  }
   
   .nav-text {
     display: flex;

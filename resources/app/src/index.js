@@ -7,7 +7,6 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 
 
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
